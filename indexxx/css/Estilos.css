@@ -1,0 +1,616 @@
+/* Aqui va el HEADER */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container__all {
+  position: relative;
+  right: 0;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.move_content {
+  right: 180px;
+}
+
+.container__header {
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+header .logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* NUEVO LOGO */
+.logo img {
+  width: 110px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.container__nav {
+  position: relative;
+  height: 100%;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0px 20px;
+}
+
+nav ul li a {
+  color: #373737;
+  font-size: 14px;
+}
+
+.select {
+  background: #359ef9;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.nav_mod {
+  height: 70px;
+  box-shadow: 1px 1px 10px 0px #00000010;
+  background: #ffffff;
+}
+
+.btn__menu {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  display: none;
+}
+
+.btn__menu:hover {
+  background: #cdd7e4;
+}
+
+/* COVER */
+
+.cover {
+  width: 100%;
+  padding-bottom: 60px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+}
+
+.container__cover {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/fondo-huellas.png);
+}
+
+.cover .container__info {
+  max-width: 400px;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+.cover h1 {
+  max-width: 400px;
+  font-size: 60px;
+  font-weight: 800;
+  color: #373737;
+}
+
+.cover h2 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #e67206;
+  margin-top: -28px;
+}
+
+.cover p {
+  margin-top: 10px;
+  color: #373733;
+}
+
+.cover .cover__button {
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  float: left;
+  margin: 33px 10px;
+  color: white;
+  background: #e67206;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-shadow: 1px 1px 30px -5px #333131fb;
+  cursor: pointer;
+  transition: box-shadow 500ms;
+  -webkit-transition: box-shadow 500ms;
+  -moz-transition: box-shadow 500ms;
+  -ms-transition: box-shadow 500ms;
+  -o-transition: box-shadow 500ms;
+}
+
+.cover .cover__button:hover {
+  box-shadow: 1px 1px 30px -5px #000000;
+}
+
+.container__vector {
+  position: relative;
+}
+
+.container__vector img {
+  position: absolute;
+  margin: -15px 20px;
+  bottom: 10px;
+  right: 0px;
+  width: 590px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  animation: move_vector 6s ease-in-out infinite;
+  -webkit-animation: move_vector 8s ease-in-out infinite;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+@keyframes move_vector {
+  0% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+  25% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container__vector img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn__menu {
+    display: flex;
+  }
+
+  nav {
+    height: 100%;
+    background: #f1faff;
+    position: fixed;
+    top: 0;
+    right: -180px;
+    padding: 0 40px;
+
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+  }
+
+  .move_nav {
+    right: 0px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 20px 0px;
+  }
+
+  .container__vector img {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    animation: none;
+    -webkit-animation: none;
+  }
+}
+
+/* Inicio de CARDS */
+
+.container__card {
+  max-width: 1200px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../images/fondo-huellas.png);
+}
+
+.card {
+  width: 300px;
+  position: relative;
+  margin: 25px;
+  font-family: "Poppins", sans-serif;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 20px -10px #20202049;
+}
+
+.card:hover .info__description {
+  margin-top: 0;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-border-radius: 0px 0px 20px 20px;
+  -moz-border-radius: 0px 0px 20px 20px;
+  -ms-border-radius: 0px 0px 20px 20px;
+  -o-border-radius: 0px 0px 20px 20px;
+}
+
+.card:hover .icon {
+  margin-top: -90px;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-border-radius: 20px 20px 0px 0px;
+  -moz-border-radius: 20px 20px 0px 0px;
+  -ms-border-radius: 20px 20px 0px 0px;
+  -o-border-radius: 20px 20px 0px 0px;
+}
+
+.icon {
+  width: 100%;
+  height: 220px;
+  background: #eff3f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -webkit-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -moz-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -ms-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -o-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.icon i {
+  font-size: 150px;
+  color: white;
+  transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -webkit-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -moz-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -ms-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -o-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+}
+
+.info__description {
+  width: 100%;
+  height: 220px;
+  color: #474747;
+  background: #eff3f5;
+  padding: 20px;
+  margin-top: -220px;
+  transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -webkit-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -moz-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -ms-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  -o-transition: all 400ms cubic-bezier(1, 0.2, 0.2, 1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.info__description h2 {
+  font-size: 22px;
+  margin-top: 0px;
+  text-align: center;
+  justify-content: center;
+}
+
+.info__description p {
+  font-size: 14px;
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
+}
+
+.info__description input {
+  margin: 18px 60px;
+  padding: 10px 40px;
+  background: #2196f3;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 1px 1px 30px -5px #20202049;
+  transition: box-shadow 300ms;
+  -webkit-transition: box-shadow 300ms;
+  -moz-transition: box-shadow 300ms;
+  -ms-transition: box-shadow 300ms;
+  -o-transition: box-shadow 300ms;
+}
+
+.info__description input:hover {
+  box-shadow: 1px 1px 30px -5px #20202080;
+}
+
+/* Color de las card */
+
+.c1:hover .icon {
+  background: #581845;
+}
+
+.c1 .icon i {
+  color: #581845;
+}
+
+.c1:hover .icon i {
+  color: white;
+}
+
+.c2:hover .icon {
+  background: #900c3f;
+}
+
+.c2 .icon i {
+  color: #900c3f;
+}
+
+.c2:hover .icon i {
+  color: white;
+}
+
+.c3:hover .icon {
+  background: #c70039;
+}
+
+.c3 .icon i {
+  color: #c70039;
+}
+
+.c3:hover .icon i {
+  color: white;
+}
+
+.c4:hover .icon {
+  background: #ff5733;
+}
+
+.c4 .icon i {
+  color: #ff5733;
+}
+
+.c4:hover .icon i {
+  color: white;
+}
+
+.c5:hover .icon {
+  background: #ffc300;
+}
+
+.c5 .icon i {
+  color: #ffc300;
+}
+
+.c5:hover .icon i {
+  color: white;
+}
+
+/* Fin de CARDS */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  font-family: "Nunito", sans-serif;
+  *background-image: url(../images/background-footer.svg);
+  *background-size: cover;
+  background-color: #d0f0f8;
+  -webkit-mask-image: url(../images/background-footer.svg);
+  mask-image: url(../images/background-footer.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+/* NUEVO LOGOO */
+.box__footer .logo img {
+  width: 280px;
+  margin-bottom: 20px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 50px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.6;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.box__copyright p {
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+}
